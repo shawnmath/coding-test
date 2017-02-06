@@ -1,0 +1,80 @@
+/*
+	CONTROLS / SCROLL NAV
+*/
+
+.controls {
+	position: relative;
+	top: -10px;
+	border-top: 1px solid #ccc;	
+	background-color: #fff;
+	cursor: pointer;
+
+	&_wrapper {
+		position: relative;
+		padding: 0 18px;
+		top: -5px;
+		background-color: #fff;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	div {
+		text-align: center;
+	}
+}
+
+.divider {
+	display: none;
+}
+
+.scroll_nav {
+	display: none;	
+	font-weight: normal;
+	font-size: 16px;
+	color: #2d5f82;
+
+	&.active, &.active > span {
+		display: block;	
+	}
+
+	&.active > span {
+		padding: 8px 0;
+	}
+
+	&.full {
+		width: 100%;	
+	}
+
+	&.active.half {
+		float: left;
+		width: 49.8%;	
+
+		& + .divider {
+			display: block;
+			float: left;
+			width: 1px;
+			height: 15px;
+			margin-top: 7.5px;
+			background-color: #ccc;
+		}
+
+		.next_text {
+			display: none;	
+		}
+	}
+}
+
+.next_text {	
+	pointer-events: none;
+}
+
+.chevron-down,
+.chevron-up {
+	display: inline-block;
+	width: 16px;	
+	pointer-events: none;
+}

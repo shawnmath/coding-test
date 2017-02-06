@@ -1,0 +1,13 @@
+/*
+	LIST CONTAINER
+*/
+.headline-list {
+	width: 300px;
+	height: 500px;
+	overflow: hidden;
+	margin: 50px auto 0 auto;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	@include box-shadow(0px, 0px, 15px, 0px, rgba(0,0,0,0.85));
+}

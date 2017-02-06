@@ -1,0 +1,10 @@
+@mixin linear-gradient($args...){
+	background-image: -webkit-linear-gradient($args);	
+	background-image: linear-gradient($args);	
+}
+
+@mixin box-shadow($inset, $x, $y, $blur, $color) {
+    -webkit-box-shadow: $inset $x $y $blur $color;
+    -moz-box-shadow: $inset $x $y $blur $color;
+    box-shadow: $inset $x $y $blur $color;
+}
