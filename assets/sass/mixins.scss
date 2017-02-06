@@ -1,5 +1,6 @@
 @mixin linear-gradient($args...){
 	background-image: -webkit-linear-gradient($args);	
+	background-image: -ms-linear-gradient($args);
 	background-image: linear-gradient($args);	
 }
 
