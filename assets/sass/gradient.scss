@@ -11,13 +11,13 @@
 		display: none;		
 		top: 0;
 		z-index: 2;		
-		@include linear-gradient(bottom, rgba(255,255,255, 0), rgba(255,255,255, 1));
+		@include linear-gradient(bottom, rgba(255,255,255, 0) 0%, rgba(255,255,255, 1) 100%);
 
 	}
 
     &-bottom {		
 		top: -200%;		
-		@include linear-gradient(top, rgba(255,255,255, 0), rgba(255,255,255, 1));
+		@include linear-gradient(top, rgba(255,255,255, 0) 0%, rgba(255,255,255, 1) 100%);
 	}
 }
 
